@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preserve": "rimraf dist && npx tsc",
-    "serve": "tsc -w & nodemon dist/server.js"
+    "serve": "tsc -w & nodemon dist/server.js",    
+    "onrenderBuild":"npm install && npx tsc",
+    "onrenderStart":"npx pm2 start ./dist/server.js && npx pm2 log"
   },
   "keywords": [
     "geolocation",
