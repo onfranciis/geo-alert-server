@@ -14,7 +14,7 @@ app.post("/alert", AddAlert);
 
 app.all("*", (_, res) => {
   res.status(404).send({
-    error: null,
-    result: "Invalid route!",
+    result: null,
+    error: "Invalid route!",
   });
 });
