@@ -1,0 +1,28 @@
+{
+  "name": "geo-alert-server",
+  "version": "1.0.0",
+  "description": "A backend server for storing geo location of alerts",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preserve": "rimraf dist && npx tsc",
+    "serve": "tsc -w & nodemon dist/server.js"
+  },
+  "keywords": [
+    "geolocation",
+    "alert"
+  ],
+  "author": "Francis Onukwu",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mongoose": "^5.11.97",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2",
+    "nodemon": "^3.1.0",
+    "pm2": "^5.3.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  }
+}
