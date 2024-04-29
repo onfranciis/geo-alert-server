@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preserve": "rimraf dist && npx tsc",
-    "serve": "tsc -w & nodemon dist/server.js",    
-    "onrenderBuild":"npm install && npx tsc",
-    "onrenderStart":"npx pm2 start ./dist/server.js && npx pm2 log"
+    "serve": "tsc -w & nodemon dist/server.js",
+    "onrenderBuild": "npm install && npx tsc",
+    "onrenderStart": "npx pm2 start ./dist/server.js && npx pm2 log"
   },
   "keywords": [
     "geolocation",
@@ -26,5 +26,9 @@
     "pm2": "^5.3.1",
     "rimraf": "^5.0.5",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7"
   }
 }
