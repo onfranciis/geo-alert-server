@@ -1,4 +1,5 @@
 export interface IAlert {
   message: string;
-  location: string;
+  longitude: number;
+  latitude: number;
 }

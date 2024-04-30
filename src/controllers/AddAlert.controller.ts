@@ -10,7 +10,8 @@ export const AddAlert: RequestHandler = async (req, res) => {
       .then(async (form) => {
         const result = await Alert.create({
           message: form.message,
-          location: form.location,
+          longitude: form.longitude,
+          latitude: form.latitude,
         });
 
         result["__v"] = undefined;

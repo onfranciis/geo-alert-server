@@ -9,8 +9,12 @@ const AlertSchema = new Schema({
     type: Date,
     default: new Date(),
   },
-  location: {
-    type: String,
+  longitude: {
+    type: Number,
+    required: true,
+  },
+  latitude: {
+    type: Number,
     required: true,
   },
 });
